@@ -8,13 +8,15 @@ export class CountriesService {
 
   private apiURL: string = 'https://restcountries.com/v3.1'
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    // console.log('CountriesServices init');
+  }
 
   private getCountriesRequest(url: string): Observable<Country[]> {
     return this.http.get<Country[]>(url)
       .pipe(
         catchError( () => of([])),
-        delay(2000),
+        // delay(2000),
       );
   }
 

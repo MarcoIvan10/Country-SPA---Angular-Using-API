@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-loading-spinner',
+  selector: 'shared-loading-spinner',
   standalone: false,
   templateUrl: './loading-spinner.component.html',
-  styles: ``
+  styleUrls: ['./loading-spinner.component.css']
 })
 export class LoadingSpinnerComponent {
 
